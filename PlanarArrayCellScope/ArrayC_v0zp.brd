@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.1.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+</layers>
+<board>
+<plain>
+<wire x1="41.57940625" y1="35.95511875" x2="43.138278125" y2="35.95511875" width="0" layer="20"/>
+<wire x1="43.138278125" y1="35.95511875" x2="43.138278125" y2="18.77964375" width="0" layer="20"/>
+<wire x1="43.138278125" y1="18.77964375" x2="41.57940625" y2="18.77964375" width="0" layer="20"/>
+<wire x1="41.57940625" y1="18.77964375" x2="41.57940625" y2="35.95511875" width="0" layer="20"/>
+<wire x1="42.35511875" y1="42.35511875" x2="42.35511875" y2="12.37964375" width="0" layer="21"/>
+<wire x1="47.892915625" y1="47.892915625" x2="47.892915625" y2="6.84184375" width="0" layer="20"/>
+<wire x1="35.95511875" y1="41.57940625" x2="35.95511875" y2="43.138278125" width="0" layer="20"/>
+<wire x1="35.95511875" y1="43.138278125" x2="18.77964375" y2="43.138278125" width="0" layer="20"/>
+<wire x1="18.77964375" y1="43.138278125" x2="18.77964375" y2="41.57940625" width="0" layer="20"/>
+<wire x1="18.77964375" y1="41.57940625" x2="35.95511875" y2="41.57940625" width="0" layer="20"/>
+<wire x1="42.35511875" y1="42.35511875" x2="12.37964375" y2="42.35511875" width="0" layer="21"/>
+<wire x1="47.892915625" y1="47.892915625" x2="6.84184375" y2="47.892915625" width="0" layer="20"/>
+<wire x1="13.155359375" y1="35.95511875" x2="11.5964875" y2="35.95511875" width="0" layer="20"/>
+<wire x1="11.5964875" y1="35.95511875" x2="11.5964875" y2="18.77964375" width="0" layer="20"/>
+<wire x1="11.5964875" y1="18.77964375" x2="13.155359375" y2="18.77964375" width="0" layer="20"/>
+<wire x1="13.155359375" y1="18.77964375" x2="13.155359375" y2="35.95511875" width="0" layer="20"/>
+<wire x1="12.37964375" y1="42.35511875" x2="12.37964375" y2="12.37964375" width="0" layer="21"/>
+<wire x1="6.84184375" y1="47.892915625" x2="6.84184375" y2="6.84184375" width="0" layer="20"/>
+<wire x1="35.95511875" y1="13.155359375" x2="35.95511875" y2="11.5964875" width="0" layer="20"/>
+<wire x1="35.95511875" y1="11.5964875" x2="18.77964375" y2="11.5964875" width="0" layer="20"/>
+<wire x1="18.77964375" y1="11.5964875" x2="18.77964375" y2="13.155359375" width="0" layer="20"/>
+<wire x1="18.77964375" y1="13.155359375" x2="35.95511875" y2="13.155359375" width="0" layer="20"/>
+<wire x1="42.35511875" y1="12.37964375" x2="12.37964375" y2="12.37964375" width="0" layer="21"/>
+<wire x1="47.892915625" y1="6.84184375" x2="6.84184375" y2="6.84184375" width="0" layer="20"/>
+</plain>
+<libraries>
+<library name="ZacksLib">
+<packages>
+<package name="KB_RGBLED_APTF1616">
+<smd name="P3" x="-0.42" y="0.66" dx="0.7" dy="0.4" layer="1"/>
+<smd name="P2" x="0.42" y="0.66" dx="0.7" dy="0.4" layer="1"/>
+<smd name="P4" x="-0.415" y="-0.65" dx="0.7" dy="0.4" layer="1"/>
+<smd name="P1" x="0.42" y="-0.65" dx="0.7" dy="0.4" layer="1"/>
+<wire x1="-0.8" y1="-0.3" x2="-0.8" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.3" x2="0.8" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0.2" x2="0.2" y2="0.2" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0.2" x2="0.2" y2="0" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0" x2="0.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0.2" x2="-0.2" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="-0.5" y2="0" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="8mil"/>
+<param name="mdSmdVia" value="8mil"/>
+<param name="mdSmdSmd" value="8mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="8mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="24mil"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="LED00" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="13.99" y="13.99"/>
+<element name="LED01" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.29" y="16.91"/>
+<element name="LED02" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.51" y="19.65"/>
+<element name="LED03" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.66" y="22.29"/>
+<element name="LED04" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.75" y="24.84"/>
+<element name="LED05" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.78" y="27.37"/>
+<element name="LED06" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.75" y="29.89"/>
+<element name="LED07" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.66" y="32.45"/>
+<element name="LED08" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.51" y="35.08"/>
+<element name="LED09" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="14.29" y="37.83"/>
+<element name="LED10" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="13.99" y="40.74"/>
+<element name="LED11" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="16.91" y="14.29"/>
+<element name="LED12" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.14" y="17.14"/>
+<element name="LED13" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.32" y="19.83"/>
+<element name="LED14" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.43" y="22.4"/>
+<element name="LED15" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.5" y="24.9"/>
+<element name="LED16" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.52" y="27.37"/>
+<element name="LED17" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.5" y="29.83"/>
+<element name="LED18" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.43" y="32.33"/>
+<element name="LED19" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.32" y="34.91"/>
+<element name="LED20" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="17.14" y="37.59"/>
+<element name="LED21" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="16.91" y="40.44"/>
+<element name="LED22" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="19.65" y="14.51"/>
+<element name="LED23" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="19.83" y="17.32"/>
+<element name="LED24" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="19.96" y="19.96"/>
+<element name="LED25" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="20.04" y="22.48"/>
+<element name="LED26" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="20.09" y="24.94"/>
+<element name="LED27" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="20.11" y="27.37"/>
+<element name="LED28" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="20.09" y="29.79"/>
+<element name="LED29" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="20.04" y="32.25"/>
+<element name="LED30" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="19.96" y="34.78"/>
+<element name="LED31" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="19.83" y="37.42"/>
+<element name="LED32" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="19.65" y="40.22"/>
+<element name="LED33" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.29" y="14.66"/>
+<element name="LED34" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.4" y="17.43"/>
+<element name="LED35" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.48" y="20.04"/>
+<element name="LED36" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.54" y="22.54"/>
+<element name="LED37" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.57" y="24.97"/>
+<element name="LED38" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.59" y="27.37"/>
+<element name="LED39" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.57" y="29.76"/>
+<element name="LED40" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.54" y="32.19"/>
+<element name="LED41" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.48" y="34.69"/>
+<element name="LED42" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.4" y="37.3"/>
+<element name="LED43" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="22.29" y="40.07"/>
+<element name="LED44" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.84" y="14.75"/>
+<element name="LED45" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.9" y="17.5"/>
+<element name="LED46" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.94" y="20.09"/>
+<element name="LED47" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.97" y="22.57"/>
+<element name="LED48" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.99" y="24.99"/>
+<element name="LED49" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.99" y="27.37"/>
+<element name="LED50" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.99" y="29.75"/>
+<element name="LED51" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.97" y="32.16"/>
+<element name="LED52" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.94" y="34.64"/>
+<element name="LED53" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.9" y="37.23"/>
+<element name="LED54" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="24.84" y="39.98"/>
+<element name="LED55" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="14.78"/>
+<element name="LED56" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="17.52"/>
+<element name="LED57" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="20.11"/>
+<element name="LED58" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="22.59"/>
+<element name="LED59" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="24.99"/>
+<element name="LED60" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="27.37"/>
+<element name="LED61" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="29.74"/>
+<element name="LED62" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="32.15"/>
+<element name="LED63" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="34.62"/>
+<element name="LED64" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="37.21"/>
+<element name="LED65" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="27.37" y="39.95"/>
+<element name="LED66" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.89" y="14.75"/>
+<element name="LED67" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.83" y="17.5"/>
+<element name="LED68" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.79" y="20.09"/>
+<element name="LED69" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.76" y="22.57"/>
+<element name="LED70" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.75" y="24.99"/>
+<element name="LED71" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.74" y="27.37"/>
+<element name="LED72" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.75" y="29.75"/>
+<element name="LED73" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.76" y="32.16"/>
+<element name="LED74" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.79" y="34.64"/>
+<element name="LED75" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.83" y="37.23"/>
+<element name="LED76" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="29.89" y="39.98"/>
+<element name="LED77" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.45" y="14.66"/>
+<element name="LED78" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.33" y="17.43"/>
+<element name="LED79" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.25" y="20.04"/>
+<element name="LED80" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.19" y="22.54"/>
+<element name="LED81" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.16" y="24.97"/>
+<element name="LED82" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.15" y="27.37"/>
+<element name="LED83" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.16" y="29.76"/>
+<element name="LED84" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.19" y="32.19"/>
+<element name="LED85" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.25" y="34.69"/>
+<element name="LED86" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.33" y="37.3"/>
+<element name="LED87" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="32.45" y="40.07"/>
+<element name="LED88" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="35.08" y="14.51"/>
+<element name="LED89" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.91" y="17.32"/>
+<element name="LED90" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.78" y="19.96"/>
+<element name="LED91" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.69" y="22.48"/>
+<element name="LED92" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.64" y="24.94"/>
+<element name="LED93" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.62" y="27.37"/>
+<element name="LED94" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.64" y="29.79"/>
+<element name="LED95" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.69" y="32.25"/>
+<element name="LED96" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.78" y="34.78"/>
+<element name="LED97" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="34.91" y="37.42"/>
+<element name="LED98" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="35.08" y="40.22"/>
+<element name="LED99" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.83" y="14.29"/>
+<element name="LED100" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.59" y="17.14"/>
+<element name="LED101" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.42" y="19.83"/>
+<element name="LED102" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.3" y="22.4"/>
+<element name="LED103" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.23" y="24.9"/>
+<element name="LED104" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.21" y="27.37"/>
+<element name="LED105" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.23" y="29.83"/>
+<element name="LED106" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.3" y="32.33"/>
+<element name="LED107" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.42" y="34.91"/>
+<element name="LED108" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.59" y="37.59"/>
+<element name="LED109" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="37.83" y="40.44"/>
+<element name="LED110" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.74" y="13.99"/>
+<element name="LED111" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.44" y="16.91"/>
+<element name="LED112" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.22" y="19.65"/>
+<element name="LED113" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.07" y="22.29"/>
+<element name="LED114" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="39.98" y="24.84"/>
+<element name="LED115" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="39.95" y="27.37"/>
+<element name="LED116" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="39.98" y="29.89"/>
+<element name="LED117" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.07" y="32.45"/>
+<element name="LED118" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.22" y="35.08"/>
+<element name="LED119" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.44" y="37.83"/>
+<element name="LED120" library="ZacksLib" package="KB_RGBLED_APTF1616" value="KB_APTF1616V0" x="40.74" y="40.74"/>
+</elements>
+<signals>
+</signals>
+</board>
+</drawing>
+</eagle>
