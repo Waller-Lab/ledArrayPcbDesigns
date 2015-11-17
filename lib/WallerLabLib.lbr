@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1233,16 +1233,17 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <text x="-6.35" y="25.4" size="1.778" layer="94">PIC18f2520</text>
 </symbol>
 <symbol name="5PIN_CONN">
-<pin name="SDI" x="-33.02" y="15.24" length="middle"/>
-<pin name="SDO" x="-33.02" y="10.16" length="middle"/>
-<pin name="CLK" x="-33.02" y="5.08" length="middle"/>
-<pin name="OE" x="-33.02" y="0" length="middle"/>
-<pin name="LE" x="-33.02" y="-5.08" length="middle"/>
-<wire x1="-27.94" y1="17.78" x2="-27.94" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-27.94" y1="-7.62" x2="-20.32" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-7.62" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="17.78" x2="-27.94" y2="17.78" width="0.254" layer="94"/>
-<text x="-27.94" y="18.542" size="1.778" layer="96">&gt;Value</text>
+<pin name="1(SQ)" x="-7.62" y="10.16" length="middle"/>
+<pin name="2" x="-7.62" y="5.08" length="middle"/>
+<pin name="3" x="-7.62" y="0" length="middle"/>
+<pin name="4" x="-7.62" y="-5.08" length="middle"/>
+<pin name="5" x="-7.62" y="-10.16" length="middle"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<text x="-2.54" y="13.462" size="1.778" layer="96">&gt;Value</text>
+<text x="-2.54" y="-15.24" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 <symbol name="6PIN_CONN">
 <pin name="3" x="-7.62" y="2.54" length="middle"/>
@@ -1252,10 +1253,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pin name="5" x="-7.62" y="-7.62" length="middle"/>
 <pin name="6" x="-7.62" y="-12.7" length="middle"/>
 <wire x1="-2.54" y1="-15.24" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-15.24" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
-<text x="-2.54" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="15.24" x2="2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-15.24" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
+<text x="-2.54" y="-18.034" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.286" y="16.51" size="1.778" layer="96">&gt;Name</text>
 </symbol>
 <symbol name="RESISTOR_NETWORK_5">
 <pin name="COMMON" x="0" y="7.62" visible="off" length="middle" rot="R270"/>
@@ -1284,12 +1286,14 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <text x="7.62" y="-4.826" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 </symbol>
 <symbol name="2PIN_POWER">
-<wire x1="-10.16" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<pin name="VCC" x="-15.24" y="2.54" length="middle"/>
-<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="VCC" x="-7.62" y="2.54" length="middle"/>
+<pin name="GND" x="-7.62" y="-2.54" length="middle"/>
+<text x="-2.032" y="6.096" size="1.778" layer="95">&gt;Name</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 <symbol name="LED_BOARD_CONNECTOR">
 <wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
@@ -1442,83 +1446,83 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <text x="-7.62" y="8.636" size="1.6764" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="48CH_LEDDRIVER">
-<pin name="G3" x="-17.78" y="5.08" length="middle"/>
-<pin name="R3" x="-17.78" y="7.62" length="middle"/>
-<pin name="B3" x="-17.78" y="2.54" length="middle"/>
-<pin name="B2" x="-17.78" y="12.7" length="middle"/>
-<pin name="G2" x="-17.78" y="15.24" length="middle"/>
-<pin name="R2" x="-17.78" y="17.78" length="middle"/>
-<pin name="B1" x="-17.78" y="22.86" length="middle"/>
-<pin name="G1" x="-17.78" y="25.4" length="middle"/>
-<pin name="R1" x="-17.78" y="27.94" length="middle"/>
-<pin name="R4" x="-17.78" y="-2.54" length="middle"/>
-<pin name="G4" x="-17.78" y="-5.08" length="middle"/>
-<pin name="B4" x="-17.78" y="-7.62" length="middle"/>
-<pin name="R5" x="-17.78" y="-12.7" length="middle"/>
-<pin name="G5" x="-17.78" y="-15.24" length="middle"/>
-<pin name="B5" x="-17.78" y="-17.78" length="middle"/>
-<pin name="R6" x="-17.78" y="-22.86" length="middle"/>
-<pin name="G6" x="-17.78" y="-25.4" length="middle"/>
-<pin name="B6" x="-17.78" y="-27.94" length="middle"/>
-<pin name="B0" x="-17.78" y="33.02" length="middle"/>
-<pin name="G0" x="-17.78" y="35.56" length="middle"/>
-<pin name="R0" x="-17.78" y="38.1" length="middle"/>
-<pin name="R7" x="-17.78" y="-33.02" length="middle"/>
-<pin name="G7" x="-17.78" y="-35.56" length="middle"/>
-<pin name="B7" x="-17.78" y="-38.1" length="middle"/>
-<wire x1="-12.7" y1="40.64" x2="-12.7" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-40.64" x2="22.86" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-40.64" x2="22.86" y2="40.64" width="0.254" layer="94"/>
-<wire x1="22.86" y1="40.64" x2="-12.7" y2="40.64" width="0.254" layer="94"/>
-<pin name="VCC" x="5.08" y="-45.72" length="middle" rot="R90"/>
-<pin name="GND" x="12.7" y="-45.72" length="middle" rot="R90"/>
-<pin name="GND2" x="15.24" y="-45.72" length="middle" rot="R90"/>
-<pin name="SIN" x="20.32" y="45.72" length="middle" rot="R270"/>
-<pin name="SOUT" x="10.16" y="45.72" length="middle" rot="R270"/>
-<pin name="SCLK" x="12.7" y="45.72" length="middle" rot="R270"/>
-<pin name="LAT" x="15.24" y="45.72" length="middle" rot="R270"/>
-<pin name="GSCLK" x="17.78" y="45.72" length="middle" rot="R270"/>
-<text x="-11.938" y="41.91" size="1.778" layer="95">&gt;NAME</text>
-<text x="-11.938" y="-43.942" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="G8" x="27.94" y="35.56" length="middle" rot="R180"/>
-<pin name="R8" x="27.94" y="33.02" length="middle" rot="R180"/>
-<pin name="B8" x="27.94" y="38.1" length="middle" rot="R180"/>
-<pin name="B9" x="27.94" y="27.94" length="middle" rot="R180"/>
-<pin name="G9" x="27.94" y="25.4" length="middle" rot="R180"/>
-<pin name="R9" x="27.94" y="22.86" length="middle" rot="R180"/>
-<pin name="B10" x="27.94" y="17.78" length="middle" rot="R180"/>
-<pin name="G10" x="27.94" y="15.24" length="middle" rot="R180"/>
-<pin name="R10" x="27.94" y="12.7" length="middle" rot="R180"/>
-<pin name="R11" x="27.94" y="2.54" length="middle" rot="R180"/>
-<pin name="G11" x="27.94" y="5.08" length="middle" rot="R180"/>
-<pin name="B11" x="27.94" y="7.62" length="middle" rot="R180"/>
-<pin name="R12" x="27.94" y="-7.62" length="middle" rot="R180"/>
-<pin name="G12" x="27.94" y="-5.08" length="middle" rot="R180"/>
-<pin name="B12" x="27.94" y="-2.54" length="middle" rot="R180"/>
-<pin name="R13" x="27.94" y="-17.78" length="middle" rot="R180"/>
-<pin name="G13" x="27.94" y="-15.24" length="middle" rot="R180"/>
-<pin name="B13" x="27.94" y="-12.7" length="middle" rot="R180"/>
-<pin name="B14" x="27.94" y="-22.86" length="middle" rot="R180"/>
-<pin name="G14" x="27.94" y="-25.4" length="middle" rot="R180"/>
-<pin name="R14" x="27.94" y="-27.94" length="middle" rot="R180"/>
-<pin name="R15" x="27.94" y="-38.1" length="middle" rot="R180"/>
-<pin name="G15" x="27.94" y="-35.56" length="middle" rot="R180"/>
-<pin name="B15" x="27.94" y="-33.02" length="middle" rot="R180"/>
-<pin name="PAD" x="0" y="-45.72" length="middle" rot="R90"/>
+<pin name="G3" x="-22.86" y="5.08" length="middle"/>
+<pin name="R3" x="-22.86" y="7.62" length="middle"/>
+<pin name="B3" x="-22.86" y="2.54" length="middle"/>
+<pin name="B2" x="-22.86" y="12.7" length="middle"/>
+<pin name="G2" x="-22.86" y="15.24" length="middle"/>
+<pin name="R2" x="-22.86" y="17.78" length="middle"/>
+<pin name="B1" x="-22.86" y="22.86" length="middle"/>
+<pin name="G1" x="-22.86" y="25.4" length="middle"/>
+<pin name="R1" x="-22.86" y="27.94" length="middle"/>
+<pin name="R4" x="-22.86" y="-2.54" length="middle"/>
+<pin name="G4" x="-22.86" y="-5.08" length="middle"/>
+<pin name="B4" x="-22.86" y="-7.62" length="middle"/>
+<pin name="R5" x="-22.86" y="-12.7" length="middle"/>
+<pin name="G5" x="-22.86" y="-15.24" length="middle"/>
+<pin name="B5" x="-22.86" y="-17.78" length="middle"/>
+<pin name="R6" x="-22.86" y="-22.86" length="middle"/>
+<pin name="G6" x="-22.86" y="-25.4" length="middle"/>
+<pin name="B6" x="-22.86" y="-27.94" length="middle"/>
+<pin name="B0" x="-22.86" y="33.02" length="middle"/>
+<pin name="G0" x="-22.86" y="35.56" length="middle"/>
+<pin name="R0" x="-22.86" y="38.1" length="middle"/>
+<pin name="R7" x="-22.86" y="-33.02" length="middle"/>
+<pin name="G7" x="-22.86" y="-35.56" length="middle"/>
+<pin name="B7" x="-22.86" y="-38.1" length="middle"/>
+<wire x1="-17.78" y1="40.64" x2="-17.78" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-40.64" x2="17.78" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-40.64" x2="17.78" y2="40.64" width="0.254" layer="94"/>
+<wire x1="17.78" y1="40.64" x2="-17.78" y2="40.64" width="0.254" layer="94"/>
+<pin name="VCC" x="-2.54" y="-45.72" length="middle" rot="R90"/>
+<pin name="GND" x="5.08" y="-45.72" length="middle" rot="R90"/>
+<pin name="GND2" x="7.62" y="-45.72" length="middle" rot="R90"/>
+<pin name="SIN" x="-5.08" y="45.72" length="middle" rot="R270"/>
+<pin name="SOUT" x="-2.54" y="45.72" length="middle" rot="R270"/>
+<pin name="SCLK" x="2.54" y="45.72" length="middle" rot="R270"/>
+<pin name="LAT" x="5.08" y="45.72" length="middle" rot="R270"/>
+<pin name="GSCLK" x="7.62" y="45.72" length="middle" rot="R270"/>
+<text x="-17.018" y="41.91" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.018" y="-43.942" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="G8" x="22.86" y="35.56" length="middle" rot="R180"/>
+<pin name="R8" x="22.86" y="33.02" length="middle" rot="R180"/>
+<pin name="B8" x="22.86" y="38.1" length="middle" rot="R180"/>
+<pin name="B9" x="22.86" y="27.94" length="middle" rot="R180"/>
+<pin name="G9" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="R9" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="B10" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="G10" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="R10" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="R11" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="G11" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="B11" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="R12" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="G12" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="B12" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="R13" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="G13" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="B13" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="B14" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="G14" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="R14" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="R15" x="22.86" y="-38.1" length="middle" rot="R180"/>
+<pin name="G15" x="22.86" y="-35.56" length="middle" rot="R180"/>
+<pin name="B15" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="PAD" x="2.54" y="-45.72" length="middle" rot="R90"/>
 </symbol>
 <symbol name="8PIN_CONN">
-<pin name="P1" x="-7.62" y="17.78" length="middle"/>
-<pin name="P2" x="-7.62" y="12.7" length="middle"/>
-<pin name="P3" x="-7.62" y="7.62" length="middle"/>
-<pin name="P4" x="-7.62" y="2.54" length="middle"/>
-<pin name="P5" x="-7.62" y="-2.54" length="middle"/>
-<pin name="P6" x="-7.62" y="-7.62" length="middle"/>
-<pin name="P7" x="-7.62" y="-12.7" length="middle"/>
-<pin name="P8" x="-7.62" y="-17.78" length="middle"/>
+<pin name="1" x="-7.62" y="17.78" length="middle"/>
+<pin name="2" x="-7.62" y="12.7" length="middle"/>
+<pin name="3" x="-7.62" y="7.62" length="middle"/>
+<pin name="4" x="-7.62" y="2.54" length="middle"/>
+<pin name="5" x="-7.62" y="-2.54" length="middle"/>
+<pin name="6" x="-7.62" y="-7.62" length="middle"/>
+<pin name="7" x="-7.62" y="-12.7" length="middle"/>
+<pin name="8" x="-7.62" y="-17.78" length="middle"/>
 <wire x1="-2.54" y1="20.32" x2="-2.54" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="20.32" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="20.32" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
 <text x="-2.032" y="21.082" size="1.778" layer="95">&gt;NAME</text>
 <text x="-1.524" y="-23.368" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -2034,11 +2038,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <devices>
 <device name="V1" package="5PIN_HOLES">
 <connects>
-<connect gate="G$1" pin="CLK" pad="CLK"/>
-<connect gate="G$1" pin="LE" pad="LE"/>
-<connect gate="G$1" pin="OE" pad="OE"/>
-<connect gate="G$1" pin="SDI" pad="SDI"/>
-<connect gate="G$1" pin="SDO" pad="SDO"/>
+<connect gate="G$1" pin="1(SQ)" pad="SDI"/>
+<connect gate="G$1" pin="2" pad="SDO"/>
+<connect gate="G$1" pin="3" pad="CLK"/>
+<connect gate="G$1" pin="4" pad="OE"/>
+<connect gate="G$1" pin="5" pad="LE"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2099,50 +2103,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="5_PINS_EXT">
-<gates>
-<gate name="G$1" symbol="5PIN_EXT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="V1" package="5PIN_HOLES">
-<connects>
-<connect gate="G$1" pin="3V3" pad="SDO"/>
-<connect gate="G$1" pin="5V" pad="SDI"/>
-<connect gate="G$1" pin="RA2" pad="LE"/>
-<connect gate="G$1" pin="RA3" pad="OE"/>
-<connect gate="G$1" pin="RA5" pad="CLK"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2PIN_2A">
-<gates>
-<gate name="G$1" symbol="2PIN_POWER" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="SMALL" package="2PIN_HOLES">
-<connects>
-<connect gate="G$1" pin="GND" pad="SIG"/>
-<connect gate="G$1" pin="VCC" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TE" package="TE_A32471">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="PWR"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED_HEADER">
 <gates>
 <gate name="G$1" symbol="LED_BOARD_CONNECTOR" x="0" y="0"/>
@@ -2164,25 +2124,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="2PIN-A32471">
-<gates>
-<gate name="G$1" symbol="2PIN_POWER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="V0" package="TE_A32471">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="PWR"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="2PIN_PWR">
 <gates>
-<gate name="G$1" symbol="2PIN_POWER" x="2.54" y="0"/>
+<gate name="G$1" symbol="2PIN_POWER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="0.1HEADER" package="2PIN_HOLES_PWR">
@@ -2475,14 +2419,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <devices>
 <device name="V0" package="8PIN_HOLES">
 <connects>
-<connect gate="G$1" pin="P1" pad="P1"/>
-<connect gate="G$1" pin="P2" pad="P2"/>
-<connect gate="G$1" pin="P3" pad="P3"/>
-<connect gate="G$1" pin="P4" pad="P4"/>
-<connect gate="G$1" pin="P5" pad="P5"/>
-<connect gate="G$1" pin="P6" pad="P6"/>
-<connect gate="G$1" pin="P7" pad="P7"/>
-<connect gate="G$1" pin="P8" pad="P8"/>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+<connect gate="G$1" pin="3" pad="P3"/>
+<connect gate="G$1" pin="4" pad="P4"/>
+<connect gate="G$1" pin="5" pad="P5"/>
+<connect gate="G$1" pin="6" pad="P6"/>
+<connect gate="G$1" pin="7" pad="P7"/>
+<connect gate="G$1" pin="8" pad="P8"/>
 </connects>
 <technologies>
 <technology name=""/>
