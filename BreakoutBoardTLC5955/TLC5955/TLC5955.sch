@@ -456,6 +456,69 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Capacitors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="0603-CAP">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.027940625" x2="0" y2="-0.027940625" width="0.381" layer="21"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP">
+<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
+<text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-2.159" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
+<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0.1UF-25V(+80/-20%)(0603)" prefix="C" uservalue="yes">
+<description>CAP-00810&lt;br&gt;
+Ceramic&lt;br&gt;
+Standard decoupling cap</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-00810"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -469,6 +532,7 @@
 <part name="U$1" library="WallerLabLib" deviceset="TLC5955" device="V0"/>
 <part name="U$2" library="WallerLabLib" deviceset="28_PINS" device="0"/>
 <part name="U$3" library="WallerLabLib" deviceset="28_PINS" device="0"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -478,6 +542,7 @@
 <instance part="U$1" gate="G$1" x="63.5" y="66.04"/>
 <instance part="U$2" gate="G$1" x="-22.86" y="68.58" rot="R90"/>
 <instance part="U$3" gate="G$1" x="170.18" y="68.58" rot="R270"/>
+<instance part="C1" gate="G$1" x="76.2" y="12.7" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -740,34 +805,17 @@
 <wire x1="68.58" y1="124.46" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="68.58" y1="20.32" x2="68.58" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P28"/>
-<wire x1="68.58" y1="0" x2="162.56" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PAD"/>
-<wire x1="66.04" y1="20.32" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-2.54" x2="162.56" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="-2.54" x2="162.56" y2="0" width="0.1524" layer="91"/>
-<junction x="162.56" y="0"/>
-</segment>
-</net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="60.96" y1="20.32" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="P26"/>
-<wire x1="60.96" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
-<wire x1="71.12" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="20.32" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P1"/>
-<wire x1="139.7" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.16" x2="83.82" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="12.7" x2="83.82" y2="10.16" width="0.1524" layer="91"/>
+<junction x="83.82" y="10.16"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -1014,6 +1062,35 @@
 <wire x1="88.9" y1="114.3" x2="88.9" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="P27"/>
 <wire x1="88.9" y1="5.08" x2="162.56" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="12.7" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P28"/>
+<wire x1="86.36" y1="0" x2="162.56" y2="0" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PAD"/>
+<wire x1="66.04" y1="20.32" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-2.54" x2="162.56" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-2.54" x2="162.56" y2="0" width="0.1524" layer="91"/>
+<junction x="162.56" y="0"/>
+<wire x1="73.66" y1="15.24" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="15.24" x2="86.36" y2="0" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="15.24" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
+<junction x="86.36" y="15.24"/>
+<wire x1="139.7" y1="20.32" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P1"/>
+<wire x1="139.7" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="68.58" y1="20.32" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<junction x="73.66" y="15.24"/>
+<pinref part="U$1" gate="G$1" pin="GND2"/>
+<wire x1="71.12" y1="15.24" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="20.32" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<junction x="71.12" y="15.24"/>
 </segment>
 </net>
 </nets>
