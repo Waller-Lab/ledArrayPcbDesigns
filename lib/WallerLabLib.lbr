@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -726,8 +726,8 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 <wire x1="5" y1="9" x2="-5" y2="9" width="0.127" layer="21"/>
 </package>
 <package name="2PIN_HOLES_PWR">
-<pad name="P$1" x="0" y="0" drill="1.02" diameter="1.778" shape="square"/>
-<pad name="P$2" x="2.54" y="0" drill="1.02" diameter="1.778" shape="square"/>
+<pad name="P$1" x="0" y="0" drill="3" diameter="6"/>
+<pad name="P$2" x="12.08" y="0" drill="3" diameter="6"/>
 </package>
 <package name="LM2678T">
 <pad name="GND" x="0" y="0" drill="1.2" shape="square"/>
@@ -2314,6 +2314,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name=""/>
 </technologies>
 </device>
+<device name="3-6-12MM" package="2PIN_HOLES_PWR">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="VCC" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="5VREG">
@@ -2784,6 +2793,22 @@ COM-09264 (Diffuse)</description>
 <attribute name="PROD_ID" value="CAP-11015" constant="no"/>
 <attribute name="VALUE" value="10uF" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2PIN_PWR_2">
+<gates>
+<gate name="G$1" symbol="2PIN_POWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2PIN_HOLES_PWR">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="VCC" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

@@ -1589,49 +1589,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="ZacksLib2">
-<packages>
-<package name="LITTLEFUSE_111_501">
-<pad name="P1_2" x="0" y="-2.5" drill="1.17"/>
-<pad name="P1_1" x="0" y="2.5" drill="1.17"/>
-<pad name="P2_2" x="12.7" y="-2.5" drill="1.17"/>
-<pad name="P2_1" x="12.7" y="2.5" drill="1.17"/>
-<wire x1="0" y1="0" x2="12.6" y2="0" width="0.127" layer="21"/>
-<text x="2.8" y="3.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="2.6" y="-4.8" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="2PIN_FUSE">
-<pin name="P1" x="-12.7" y="0" length="middle"/>
-<pin name="P2" x="12.7" y="0" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<text x="-3.302" y="3.302" size="1.778" layer="94">FUSE</text>
-<text x="-4.572" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FUSE_2PIN">
-<gates>
-<gate name="G$1" symbol="2PIN_FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0" package="LITTLEFUSE_111_501">
-<connects>
-<connect gate="G$1" pin="P1" pad="P1_1 P1_2"/>
-<connect gate="G$1" pin="P2" pad="P2_1 P2_2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="WallerLabLib">
 <packages>
 <package name="LED-RGB-THRU">
@@ -1931,7 +1888,6 @@ COM-09264 (Diffuse)</description>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="F1" library="ZacksLib2" deviceset="FUSE_2PIN" device="0" value=" "/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2061,7 +2017,7 @@ COM-09264 (Diffuse)</description>
 <instance part="D95" gate="G$1" x="147.32" y="-243.84" rot="R270"/>
 <instance part="D96" gate="G$1" x="147.32" y="-269.24" rot="R270"/>
 <instance part="SUPPLY6" gate="G$1" x="124.46" y="-215.9"/>
-<instance part="SUPPLY7" gate="G$1" x="-213.36" y="215.9" rot="R90"/>
+<instance part="SUPPLY7" gate="G$1" x="-187.96" y="215.9" rot="R90"/>
 <instance part="C1" gate="G$1" x="-27.94" y="22.86" rot="R90"/>
 <instance part="C2" gate="G$1" x="269.24" y="-139.7" rot="R90"/>
 <instance part="C3" gate="G$1" x="-27.94" y="-147.32" rot="R90"/>
@@ -2089,7 +2045,6 @@ COM-09264 (Diffuse)</description>
 <instance part="GND5" gate="1" x="248.92" y="-12.7" rot="R90"/>
 <instance part="GND6" gate="1" x="254" y="-195.58" rot="R90"/>
 <instance part="GND7" gate="1" x="-43.18" y="-22.86" rot="R90"/>
-<instance part="F1" gate="G$1" x="-193.04" y="215.9"/>
 <instance part="GND8" gate="1" x="-195.58" y="187.96"/>
 <instance part="GND9" gate="1" x="-195.58" y="165.1"/>
 <instance part="GND10" gate="1" x="-40.64" y="20.32"/>
@@ -2853,9 +2808,11 @@ COM-09264 (Diffuse)</description>
 <junction x="276.86" y="38.1"/>
 </segment>
 <segment>
+<wire x1="-193.04" y1="231.14" x2="-177.8" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="215.9" x2="-177.8" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<pinref part="F1" gate="G$1" pin="P1"/>
-<wire x1="-213.36" y1="215.9" x2="-205.74" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="215.9" x2="-187.96" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -5989,15 +5946,6 @@ COM-09264 (Diffuse)</description>
 <wire x1="106.68" y1="17.78" x2="276.86" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="CHIP_2" gate="G$1" pin="SIN"/>
 <wire x1="276.86" y1="17.78" x2="276.86" y2="-33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$284" class="0">
-<segment>
-<wire x1="-193.04" y1="231.14" x2="-177.8" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="P2"/>
-<wire x1="-180.34" y1="215.9" x2="-177.8" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="215.9" x2="-177.8" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="DATA_OUT" class="0">
