@@ -2724,8 +2724,8 @@ COM-09264 (Diffuse)</description>
 <connects>
 <connect gate="G$1" pin="BLUE_CATHODE" pad="4"/>
 <connect gate="G$1" pin="CATHODE" pad="2"/>
-<connect gate="G$1" pin="GREEN_CATHODE" pad="3"/>
-<connect gate="G$1" pin="RED_CATHODE" pad="1"/>
+<connect gate="G$1" pin="GREEN_CATHODE" pad="1"/>
+<connect gate="G$1" pin="RED_CATHODE" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
