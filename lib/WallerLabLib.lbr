@@ -726,8 +726,8 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 <wire x1="5" y1="9" x2="-5" y2="9" width="0.127" layer="21"/>
 </package>
 <package name="2PIN_HOLES_PWR">
-<pad name="P$1" x="0" y="0" drill="3" diameter="6"/>
-<pad name="P$2" x="12.08" y="0" drill="3" diameter="6"/>
+<pad name="P$1" x="0" y="0" drill="4" diameter="8" rot="R90"/>
+<pad name="P$2" x="16.08" y="0" drill="4" diameter="8"/>
 </package>
 <package name="LM2678T">
 <pad name="GND" x="0" y="0" drill="1.2" shape="square"/>
@@ -2315,6 +2315,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technologies>
 </device>
 <device name="3-6-12MM" package="2PIN_HOLES_PWR">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="VCC" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4-8-16MM" package="2PIN_HOLES_PWR">
 <connects>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="VCC" pad="P$2"/>
