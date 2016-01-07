@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -654,11 +654,11 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 <text x="-3.81" y="3.81" size="1.778" layer="25">&gt;NAME</text>
 </package>
 <package name="5PIN_HOLES">
-<pad name="SDI" x="-5.08" y="0" drill="0.9" diameter="1.778" shape="square"/>
-<pad name="SDO" x="-2.54" y="0" drill="0.9" diameter="1.778"/>
-<pad name="CLK" x="0" y="0" drill="0.9" diameter="1.778"/>
-<pad name="OE" x="2.54" y="0" drill="0.9" diameter="1.778"/>
-<pad name="LE" x="5.08" y="0" drill="0.9" diameter="1.778"/>
+<pad name="P1" x="-5.08" y="0" drill="0.9" diameter="1.778" shape="square"/>
+<pad name="P2" x="-2.54" y="0" drill="0.9" diameter="1.778"/>
+<pad name="P3" x="0" y="0" drill="0.9" diameter="1.778"/>
+<pad name="P4" x="2.54" y="0" drill="0.9" diameter="1.778"/>
+<pad name="P5" x="5.08" y="0" drill="0.9" diameter="1.778"/>
 <wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
@@ -1767,6 +1767,37 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
+<symbol name="AGND">
+<text x="1.27" y="-0.762" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="AIRWIRE" x="0" y="-2.54" visible="off" length="middle" function="clk" rot="R90"/>
+</symbol>
+<symbol name="1.0V">
+<text x="1.524" y="-1.524" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="SCLK" x="0" y="-2.54" visible="off" length="middle" direction="sup" function="clk" rot="R90"/>
+</symbol>
+<symbol name="SCLK">
+<text x="1.524" y="-1.524" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="SCLK" x="0" y="-2.54" visible="off" length="middle" direction="sup" function="clk" rot="R90"/>
+</symbol>
+<symbol name="LAT">
+<text x="1.524" y="-1.524" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="LAT" x="0" y="-2.54" visible="off" length="middle" direction="sup" function="clk" rot="R90"/>
+</symbol>
+<symbol name="GSCLK">
+<text x="1.524" y="-1.524" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GSCLK" x="0" y="-2.54" visible="off" length="middle" direction="sup" function="clk" rot="R90"/>
+</symbol>
+<symbol name="3.3V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="DGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="IRLZ44">
@@ -2205,11 +2236,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <devices>
 <device name="V1" package="5PIN_HOLES">
 <connects>
-<connect gate="G$1" pin="1(SQ)" pad="SDI"/>
-<connect gate="G$1" pin="2" pad="SDO"/>
-<connect gate="G$1" pin="3" pad="CLK"/>
-<connect gate="G$1" pin="4" pad="OE"/>
-<connect gate="G$1" pin="5" pad="LE"/>
+<connect gate="G$1" pin="1(SQ)" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+<connect gate="G$1" pin="3" pad="P3"/>
+<connect gate="G$1" pin="4" pad="P4"/>
+<connect gate="G$1" pin="5" pad="P5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2816,6 +2847,83 @@ COM-09264 (Diffuse)</description>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="VCC" pad="P$2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AIR_SIGNAL" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="AGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCLK" prefix="SCLK">
+<description>SCLK Net</description>
+<gates>
+<gate name="SCLK" symbol="SCLK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GSCLK" prefix="GSCLK">
+<description>GSCLK Net</description>
+<gates>
+<gate name="GSCLK" symbol="GSCLK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LAT" prefix="LAT">
+<description>LAT Net</description>
+<gates>
+<gate name="LAT" symbol="LAT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
