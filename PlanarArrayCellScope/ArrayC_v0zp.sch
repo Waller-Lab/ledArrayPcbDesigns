@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -49,6 +49,9 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -58,6 +61,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -66,12 +70,33 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -97,13 +122,23 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="ZacksLib">
+<library name="WallerLabLib">
 <packages>
 <package name="KB_RGBLED_APTF1616">
 <smd name="P3" x="-0.42" y="0.66" dx="0.7" dy="0.4" layer="1"/>
@@ -168,127 +203,87 @@
 </class>
 </classes>
 <parts>
-<part name="LED00" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED01" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED02" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED03" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED04" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED05" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED06" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED07" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED08" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED09" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED10" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED11" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED12" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED13" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED14" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED15" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED16" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED17" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED18" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED19" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED20" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED21" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED22" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED23" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED24" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED25" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED26" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED27" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED28" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED29" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED30" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED31" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED32" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED33" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED34" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED35" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED36" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED37" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED38" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED39" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED40" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED41" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED42" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED43" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED44" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED45" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED46" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED47" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED48" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED49" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED50" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED51" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED52" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED53" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED54" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED55" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED56" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED57" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED58" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED59" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED60" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED61" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED62" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED63" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED64" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED65" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED66" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED67" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED68" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED69" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED70" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED71" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED72" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED73" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED74" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED75" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED76" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED77" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED78" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED79" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED80" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED81" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED82" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED83" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED84" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED85" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED86" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED87" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED88" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED89" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED90" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED91" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED92" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED93" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED94" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED95" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED96" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED97" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED98" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED99" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED100" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED101" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED102" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED103" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED104" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED105" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED106" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED107" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED108" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED109" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED110" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED111" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED112" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED113" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED114" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED115" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED116" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED117" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED118" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED119" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
-<part name="LED120" library="ZacksLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED00" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED01" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED02" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED03" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED04" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED05" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED06" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED07" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED08" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED09" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED10" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED11" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED12" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED13" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED14" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED15" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED16" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED17" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED18" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED19" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED20" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED21" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED22" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED23" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED24" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED25" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED26" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED27" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED28" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED29" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED30" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED31" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED32" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED33" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED34" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED35" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED36" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED37" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED38" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED39" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED40" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED41" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED42" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED43" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED44" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED45" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED46" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED47" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED48" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED49" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED50" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED51" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED52" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED53" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED54" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED55" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED56" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED57" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED58" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED59" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED60" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED61" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED62" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED63" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED64" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED65" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED66" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED67" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED68" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED69" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED70" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED71" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED72" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED73" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED74" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED75" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED76" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED77" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED78" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED79" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
+<part name="LED80" library="WallerLabLib" deviceset="KB_APTF1616" device="V0"/>
 </parts>
 <sheets>
 <sheet>
@@ -376,46 +371,6 @@
 <instance part="LED78" gate="G$1" x="660.4" y="50.8" rot="R270"/>
 <instance part="LED79" gate="G$1" x="660.4" y="25.4" rot="R270"/>
 <instance part="LED80" gate="G$1" x="762" y="203.2" rot="R90"/>
-<instance part="LED81" gate="G$1" x="762" y="177.8" rot="R90"/>
-<instance part="LED82" gate="G$1" x="762" y="152.4" rot="R90"/>
-<instance part="LED83" gate="G$1" x="762" y="127" rot="R90"/>
-<instance part="LED84" gate="G$1" x="762" y="101.6" rot="R90"/>
-<instance part="LED85" gate="G$1" x="762" y="76.2" rot="R90"/>
-<instance part="LED86" gate="G$1" x="762" y="50.8" rot="R90"/>
-<instance part="LED87" gate="G$1" x="762" y="25.4" rot="R90"/>
-<instance part="LED88" gate="G$1" x="812.8" y="203.2" rot="R270"/>
-<instance part="LED89" gate="G$1" x="812.8" y="177.8" rot="R270"/>
-<instance part="LED90" gate="G$1" x="812.8" y="152.4" rot="R270"/>
-<instance part="LED91" gate="G$1" x="812.8" y="127" rot="R270"/>
-<instance part="LED92" gate="G$1" x="812.8" y="101.6" rot="R270"/>
-<instance part="LED93" gate="G$1" x="812.8" y="76.2" rot="R270"/>
-<instance part="LED94" gate="G$1" x="812.8" y="50.8" rot="R270"/>
-<instance part="LED95" gate="G$1" x="812.8" y="25.4" rot="R270"/>
-<instance part="LED96" gate="G$1" x="914.4" y="203.2" rot="R90"/>
-<instance part="LED97" gate="G$1" x="914.4" y="177.8" rot="R90"/>
-<instance part="LED98" gate="G$1" x="914.4" y="152.4" rot="R90"/>
-<instance part="LED99" gate="G$1" x="914.4" y="127" rot="R90"/>
-<instance part="LED100" gate="G$1" x="914.4" y="101.6" rot="R90"/>
-<instance part="LED101" gate="G$1" x="914.4" y="76.2" rot="R90"/>
-<instance part="LED102" gate="G$1" x="914.4" y="50.8" rot="R90"/>
-<instance part="LED103" gate="G$1" x="914.4" y="25.4" rot="R90"/>
-<instance part="LED104" gate="G$1" x="965.2" y="203.2" rot="R270"/>
-<instance part="LED105" gate="G$1" x="965.2" y="177.8" rot="R270"/>
-<instance part="LED106" gate="G$1" x="965.2" y="152.4" rot="R270"/>
-<instance part="LED107" gate="G$1" x="965.2" y="127" rot="R270"/>
-<instance part="LED108" gate="G$1" x="965.2" y="101.6" rot="R270"/>
-<instance part="LED109" gate="G$1" x="965.2" y="76.2" rot="R270"/>
-<instance part="LED110" gate="G$1" x="965.2" y="50.8" rot="R270"/>
-<instance part="LED111" gate="G$1" x="965.2" y="25.4" rot="R270"/>
-<instance part="LED112" gate="G$1" x="1066.8" y="203.2" rot="R90"/>
-<instance part="LED113" gate="G$1" x="1066.8" y="177.8" rot="R90"/>
-<instance part="LED114" gate="G$1" x="1066.8" y="152.4" rot="R90"/>
-<instance part="LED115" gate="G$1" x="1066.8" y="127" rot="R90"/>
-<instance part="LED116" gate="G$1" x="1066.8" y="101.6" rot="R90"/>
-<instance part="LED117" gate="G$1" x="1066.8" y="76.2" rot="R90"/>
-<instance part="LED118" gate="G$1" x="1066.8" y="50.8" rot="R90"/>
-<instance part="LED119" gate="G$1" x="1066.8" y="25.4" rot="R90"/>
-<instance part="LED120" gate="G$1" x="1117.6" y="203.2" rot="R270"/>
 </instances>
 <busses>
 </busses>

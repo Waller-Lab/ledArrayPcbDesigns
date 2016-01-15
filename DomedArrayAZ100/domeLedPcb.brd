@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5522,8 +5522,8 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="0mil"/>
+<param name="mdDrill" value="0mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="8mil"/>
 <param name="msDrill" value="20mil"/>
@@ -10691,17 +10691,17 @@ design rules under a new name.</description>
 <approved hash="5,1,0cb1845b792f0b4d"/>
 <approved hash="5,1,efe1096291445a45"/>
 <approved hash="5,1,e8e10ea6966a5d65"/>
-<approved hash="5,1,b87c5c8c0393c740"/>
 <approved hash="5,1,3c13c9f266f3830e"/>
-<approved hash="5,1,8e4c83bf37f91a83"/>
+<approved hash="5,1,b87c5c8c0393c740"/>
 <approved hash="5,1,bc25903bb0f57025"/>
-<approved hash="5,1,224ec9be27bf738b"/>
 <approved hash="5,1,2d3600f48fea022a"/>
+<approved hash="5,1,8e4c83bf37f91a83"/>
+<approved hash="5,1,224ec9be27bf738b"/>
 <approved hash="5,1,542acdc834e6e906"/>
 <approved hash="5,1,a628c1caccd25b32"/>
 <approved hash="5,1,736c8d659e8ace52"/>
-<approved hash="5,1,d21cd3c02843dfd5"/>
 <approved hash="5,1,77ff534028c3fabb"/>
+<approved hash="5,1,d21cd3c02843dfd5"/>
 <approved hash="5,1,888ee5f81f139871"/>
 <approved hash="5,1,431e42c02843dfd7"/>
 <approved hash="5,1,e6fdc24028c3fab9"/>
