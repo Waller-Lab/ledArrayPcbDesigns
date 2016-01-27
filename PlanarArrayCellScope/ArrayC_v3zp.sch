@@ -853,7 +853,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FLANGE1" library="WallerLabLib" deviceset="6PINS_LEDFLANGE" device="V1"/>
 <part name="FLANGE2" library="WallerLabLib" deviceset="6PINS_LEDFLANGE" device="V1"/>
 <part name="U$8" library="WallerLabLib" deviceset="6PINS_LEDFLANGE" device="V1"/>
-<part name="FLANGE3" library="WallerLabLib" deviceset="6PINS_LEDFLANGE" device="V1"/>
+<part name="FLANGE4" library="WallerLabLib" deviceset="6PINS_LEDFLANGE" device="V1"/>
 <part name="SCLK16" library="WallerLabLib" deviceset="SCLK" device=""/>
 <part name="SCLK17" library="WallerLabLib" deviceset="LAT" device=""/>
 <part name="SCLK18" library="WallerLabLib" deviceset="GSCLK" device=""/>
@@ -910,9 +910,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SCLK13" gate="LAT" x="889" y="144.78"/>
 <instance part="SCLK14" gate="SCLK" x="886.46" y="152.4"/>
 <instance part="SCLK15" gate="GSCLK" x="891.54" y="137.16"/>
-<instance part="SCLK25" gate="SCLK" x="762" y="223.52" rot="R270"/>
-<instance part="SCLK26" gate="LAT" x="754.38" y="218.44" rot="R270"/>
-<instance part="SCLK27" gate="GSCLK" x="746.76" y="213.36" rot="R270"/>
+<instance part="SCLK25" gate="SCLK" x="759.46" y="223.52" rot="R270"/>
+<instance part="SCLK26" gate="LAT" x="767.08" y="228.6" rot="R270"/>
+<instance part="SCLK27" gate="GSCLK" x="751.84" y="218.44" rot="R270"/>
 <instance part="GND1" gate="1" x="889" y="269.24"/>
 <instance part="SUPPLY10" gate="G$1" x="881.38" y="271.78" rot="R180"/>
 <instance part="GND2" gate="1" x="1092.2" y="269.24"/>
@@ -1013,8 +1013,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="LED" gate="G$1" x="835.66" y="223.52" rot="R180"/>
 <instance part="FLANGE1" gate="G$1" x="728.98" y="86.36"/>
 <instance part="FLANGE2" gate="G$1" x="728.98" y="53.34"/>
-<instance part="U$8" gate="G$1" x="728.98" y="20.32"/>
-<instance part="FLANGE3" gate="G$1" x="728.98" y="-12.7"/>
+<instance part="U$8" gate="G$1" x="728.98" y="-12.7"/>
+<instance part="FLANGE4" gate="G$1" x="728.98" y="20.32"/>
 <instance part="SCLK16" gate="SCLK" x="759.46" y="83.82" rot="R270"/>
 <instance part="SCLK17" gate="LAT" x="767.08" y="88.9" rot="R270"/>
 <instance part="SCLK18" gate="GSCLK" x="751.84" y="78.74" rot="R270"/>
@@ -1023,16 +1023,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SCLK20" gate="LAT" x="767.08" y="55.88" rot="R270"/>
 <instance part="SCLK21" gate="GSCLK" x="751.84" y="45.72" rot="R270"/>
 <instance part="GND7" gate="1" x="744.22" y="40.64" rot="R90"/>
-<instance part="SCLK22" gate="SCLK" x="759.46" y="17.78" rot="R270"/>
-<instance part="SCLK23" gate="LAT" x="767.08" y="22.86" rot="R270"/>
-<instance part="SCLK24" gate="GSCLK" x="751.84" y="12.7" rot="R270"/>
-<instance part="GND8" gate="1" x="744.22" y="7.62" rot="R90"/>
-<instance part="SCLK28" gate="SCLK" x="759.46" y="-15.24" rot="R270"/>
-<instance part="SCLK29" gate="LAT" x="767.08" y="-10.16" rot="R270"/>
-<instance part="SCLK30" gate="GSCLK" x="751.84" y="-20.32" rot="R270"/>
-<instance part="GND10" gate="1" x="744.22" y="-25.4" rot="R90"/>
+<instance part="SCLK22" gate="SCLK" x="759.46" y="-15.24" rot="R270"/>
+<instance part="SCLK23" gate="LAT" x="767.08" y="-10.16" rot="R270"/>
+<instance part="SCLK24" gate="GSCLK" x="751.84" y="-20.32" rot="R270"/>
+<instance part="GND8" gate="1" x="744.22" y="-25.4" rot="R90"/>
+<instance part="SCLK28" gate="SCLK" x="759.46" y="17.78" rot="R270"/>
+<instance part="SCLK29" gate="LAT" x="767.08" y="22.86" rot="R270"/>
+<instance part="SCLK30" gate="GSCLK" x="751.84" y="12.7" rot="R270"/>
+<instance part="GND10" gate="1" x="744.22" y="7.62" rot="R90"/>
 <instance part="ARDUINO" gate="G$1" x="731.52" y="226.06" rot="R180"/>
-<instance part="GND11" gate="1" x="744.22" y="238.76" rot="R90"/>
+<instance part="GND11" gate="1" x="744.22" y="213.36" rot="R90"/>
 <instance part="SUPPLY1" gate="G$1" x="988.06" y="185.42"/>
 </instances>
 <busses>
@@ -3508,11 +3508,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="T5" gate="G$1" pin="LAT"/>
 </segment>
 <segment>
-<pinref part="SCLK26" gate="LAT" pin="LAT"/>
-<wire x1="751.84" y1="218.44" x2="739.14" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="ARDUINO" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="FLANGE1" gate="G$1" pin="LAT"/>
 <pinref part="SCLK17" gate="LAT" pin="LAT"/>
 <wire x1="739.14" y1="88.9" x2="764.54" y2="88.9" width="0.1524" layer="91"/>
@@ -3524,13 +3519,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="SCLK23" gate="LAT" pin="LAT"/>
-<wire x1="739.14" y1="22.86" x2="764.54" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="739.14" y1="-10.16" x2="764.54" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="LAT"/>
 </segment>
 <segment>
 <pinref part="SCLK29" gate="LAT" pin="LAT"/>
-<wire x1="739.14" y1="-10.16" x2="764.54" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="FLANGE3" gate="G$1" pin="LAT"/>
+<wire x1="739.14" y1="22.86" x2="764.54" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="FLANGE4" gate="G$1" pin="LAT"/>
+</segment>
+<segment>
+<pinref part="ARDUINO" gate="G$1" pin="4"/>
+<pinref part="SCLK26" gate="LAT" pin="LAT"/>
+<wire x1="739.14" y1="228.6" x2="764.54" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
@@ -3560,11 +3560,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="T5" gate="G$1" pin="SCLK"/>
 </segment>
 <segment>
-<pinref part="SCLK25" gate="SCLK" pin="SCLK"/>
-<wire x1="739.14" y1="223.52" x2="759.46" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="ARDUINO" gate="G$1" pin="3"/>
-</segment>
-<segment>
 <pinref part="SCLK16" gate="SCLK" pin="SCLK"/>
 <pinref part="FLANGE1" gate="G$1" pin="CLK"/>
 <wire x1="756.92" y1="83.82" x2="739.14" y2="83.82" width="0.1524" layer="91"/>
@@ -3576,13 +3571,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="SCLK22" gate="SCLK" pin="SCLK"/>
-<wire x1="756.92" y1="17.78" x2="739.14" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="756.92" y1="-15.24" x2="739.14" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="CLK"/>
 </segment>
 <segment>
 <pinref part="SCLK28" gate="SCLK" pin="SCLK"/>
-<wire x1="756.92" y1="-15.24" x2="739.14" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="FLANGE3" gate="G$1" pin="CLK"/>
+<wire x1="756.92" y1="17.78" x2="739.14" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="FLANGE4" gate="G$1" pin="CLK"/>
+</segment>
+<segment>
+<pinref part="SCLK25" gate="SCLK" pin="SCLK"/>
+<pinref part="ARDUINO" gate="G$1" pin="3"/>
+<wire x1="756.92" y1="223.52" x2="739.14" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GSCLK" class="0">
@@ -3612,11 +3612,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="T5" gate="G$1" pin="GSCLK"/>
 </segment>
 <segment>
-<pinref part="SCLK27" gate="GSCLK" pin="GSCLK"/>
-<wire x1="739.14" y1="213.36" x2="744.22" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="ARDUINO" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="FLANGE1" gate="G$1" pin="GSCLK"/>
 <pinref part="SCLK18" gate="GSCLK" pin="GSCLK"/>
 <wire x1="739.14" y1="78.74" x2="749.3" y2="78.74" width="0.1524" layer="91"/>
@@ -3628,13 +3623,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="SCLK24" gate="GSCLK" pin="GSCLK"/>
-<wire x1="739.14" y1="12.7" x2="749.3" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="739.14" y1="-20.32" x2="749.3" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="GSCLK"/>
 </segment>
 <segment>
 <pinref part="SCLK30" gate="GSCLK" pin="GSCLK"/>
-<wire x1="739.14" y1="-20.32" x2="749.3" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="FLANGE3" gate="G$1" pin="GSCLK"/>
+<wire x1="739.14" y1="12.7" x2="749.3" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="FLANGE4" gate="G$1" pin="GSCLK"/>
+</segment>
+<segment>
+<pinref part="ARDUINO" gate="G$1" pin="2"/>
+<pinref part="SCLK27" gate="GSCLK" pin="GSCLK"/>
+<wire x1="739.14" y1="218.44" x2="749.3" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$357" class="0">
@@ -3690,9 +3690,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="T1" gate="G$1" pin="SIN"/>
 <wire x1="878.84" y1="370.84" x2="878.84" y2="447.04" width="0.1524" layer="91"/>
 <wire x1="878.84" y1="447.04" x2="774.7" y2="447.04" width="0.1524" layer="91"/>
-<wire x1="774.7" y1="447.04" x2="774.7" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="739.14" y1="228.6" x2="774.7" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="ARDUINO" gate="G$1" pin="4"/>
+<wire x1="774.7" y1="447.04" x2="774.7" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="ARDUINO" gate="G$1" pin="5"/>
+<wire x1="739.14" y1="233.68" x2="774.7" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$370" class="0">
@@ -3836,18 +3836,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="739.14" y1="7.62" x2="741.68" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="739.14" y1="-25.4" x2="741.68" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="739.14" y1="-25.4" x2="741.68" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="FLANGE3" gate="G$1" pin="GND"/>
+<wire x1="739.14" y1="7.62" x2="741.68" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="FLANGE4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ARDUINO" gate="G$1" pin="6"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="739.14" y1="238.76" x2="741.68" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="ARDUINO" gate="G$1" pin="1"/>
+<wire x1="741.68" y1="213.36" x2="739.14" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$49" class="0">
@@ -3891,30 +3891,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="FLANGE2" gate="G$1" pin="SOUT"/>
 <wire x1="739.14" y1="66.04" x2="777.24" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="777.24" y1="66.04" x2="777.24" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="SIN"/>
-<wire x1="777.24" y1="27.94" x2="739.14" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="FLANGE4" gate="G$1" pin="SIN"/>
+<wire x1="739.14" y1="27.94" x2="777.24" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="SOUT"/>
-<wire x1="739.14" y1="33.02" x2="774.7" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="774.7" y1="33.02" x2="774.7" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="FLANGE3" gate="G$1" pin="SIN"/>
-<wire x1="774.7" y1="-5.08" x2="739.14" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$55" class="0">
-<segment>
-<pinref part="FLANGE3" gate="G$1" pin="SOUT"/>
 <wire x1="739.14" y1="0" x2="777.24" y2="0" width="0.1524" layer="91"/>
 <wire x1="777.24" y1="0" x2="777.24" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="777.24" y1="-35.56" x2="718.82" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="718.82" y1="-35.56" x2="718.82" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="718.82" y1="246.38" x2="749.3" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="749.3" y1="246.38" x2="749.3" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="749.3" y1="233.68" x2="739.14" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="ARDUINO" gate="G$1" pin="5"/>
+<wire x1="718.82" y1="-35.56" x2="718.82" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="749.3" y1="246.38" x2="749.3" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="ARDUINO" gate="G$1" pin="6"/>
+<wire x1="749.3" y1="238.76" x2="739.14" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -3929,6 +3920,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="LED32" gate="G$1" pin="B-"/>
 <pinref part="T5" gate="G$1" pin="B2"/>
 <wire x1="815.34" y1="78.74" x2="861.06" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="FLANGE4" gate="G$1" pin="SOUT"/>
+<wire x1="739.14" y1="33.02" x2="774.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="774.7" y1="33.02" x2="774.7" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="774.7" y1="-5.08" x2="739.14" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="SIN"/>
 </segment>
 </net>
 </nets>
