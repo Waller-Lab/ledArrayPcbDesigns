@@ -1,27 +1,27 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/zfphil/develop/ledArrayPcbDesigns/PlanarArrayCellScope/ArrayC_v3zp.brd
+Job           : /Users/kuanchang/Dropbox/ledArrayPcbDesigns/PlanarArrayCellScope/ArrayC_v3zp.brd
 
-Start at      : 10:47:29 (1/14/16)
-End at        : 10:54:06 (1/14/16)
-Elapsed time  : 00:06:34
+Start at      : 15:35:19 (1/19/16)
+End at        : 15:37:48 (1/19/16)
+Elapsed time  : 00:02:26
 
-Signals       :   262   RoutingGrid: 3.93701 mil  Layers: 2
-Connections   :   388   predefined:  0 ( 0 Vias )
+Signals       :   260   RoutingGrid: 1.9685 mil  Layers: 2
+Connections   :   390   predefined:  73 ( 79 Vias )
 
-Router memory :   1776048
+Router memory :   9102288
 
 Job has been interrupted!
 
-Passname          :    Busses     Route
+Passname          :     Route
 
-Time per pass     :  00:00:00  00:06:34
-Number of Ripups  :         0      1343
-max. Level        :         0         6
-max. Total        :         0        71
+Time per pass     :  00:02:26
+Number of Ripups  :        55
+max. Level        :         3
+max. Total        :        40
 
-Routed            :        12       203
-Vias              :         0       315
-Resolution        :     3.1 %    52.3 %
+Routed            :       146
+Vias              :       134
+Resolution        :    56.2 %
 
-Final             : 37.9% finished
+Final             : 55.9% finished

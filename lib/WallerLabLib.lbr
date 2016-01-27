@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1117,6 +1117,103 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <circle x="-2.8575" y="-2.54" radius="1.905" width="0" layer="1"/>
 <circle x="2.8575" y="-2.54" radius="1.905" width="0" layer="1"/>
 </package>
+<package name="4POWER_8SIGNAL">
+<wire x1="20.828" y1="-3.81" x2="1.524" y2="-3.81" width="0" layer="20"/>
+<wire x1="-1.524" y1="-3.81" x2="-31.242" y2="-3.81" width="0" layer="20"/>
+<wire x1="1.016" y1="-3.302" x2="1.016" y2="3.81" width="0" layer="20"/>
+<smd name="B1_T" x="2.2606" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="B2_T" x="4.8006" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="B3_T" x="7.366" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="B4_T" x="9.906" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="B5_T" x="12.446" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="B6_T" x="14.986" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="B7_T" x="17.526" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="B8_T" x="20.066" y="-0.381" dx="1.651" dy="5.842" layer="1"/>
+<smd name="A1_T" x="-27.432" y="-0.381" dx="6.35" dy="5.842" layer="1"/>
+<smd name="A2_T" x="-19.812" y="-0.381" dx="6.35" dy="5.842" layer="1"/>
+<smd name="A3_T" x="-12.192" y="-0.381" dx="6.35" dy="5.842" layer="1"/>
+<smd name="A4_T" x="-4.572" y="-0.381" dx="6.35" dy="5.842" layer="1"/>
+<smd name="B1_B" x="2.2606" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="B2_B" x="4.8006" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="B3_B" x="7.366" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="B4_B" x="9.906" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="B5_B" x="12.446" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="B6_B" x="14.986" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="B7_B" x="17.526" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="B8_B" x="20.066" y="-0.381" dx="1.651" dy="5.842" layer="16"/>
+<smd name="A1_B" x="-27.432" y="-0.381" dx="6.35" dy="5.842" layer="16"/>
+<smd name="A2_B" x="-19.812" y="-0.381" dx="6.35" dy="5.842" layer="16"/>
+<smd name="A3_B" x="-12.192" y="-0.381" dx="6.35" dy="5.842" layer="16"/>
+<smd name="A4_B" x="-4.572" y="-0.381" dx="6.35" dy="5.842" layer="16"/>
+<wire x1="-1.016" y1="-3.302" x2="-1.016" y2="3.81" width="0" layer="20"/>
+<wire x1="-1.016" y1="3.81" x2="1.016" y2="3.81" width="0" layer="20" curve="-180"/>
+<wire x1="-31.75" y1="-3.302" x2="-1.016" y2="-3.302" width="0" layer="21"/>
+<wire x1="1.016" y1="-3.302" x2="21.336" y2="-3.302" width="0" layer="21"/>
+<wire x1="-1.524" y1="-3.81" x2="-1.016" y2="-3.302" width="0" layer="20"/>
+<wire x1="-31.242" y1="-3.81" x2="-31.75" y2="-3.302" width="0" layer="20"/>
+<wire x1="1.524" y1="-3.81" x2="1.016" y2="-3.302" width="0" layer="20"/>
+<wire x1="20.828" y1="-3.81" x2="21.336" y2="-3.302" width="0" layer="20"/>
+<wire x1="21.34" y1="-3.3" x2="21.34" y2="4.8476" width="0" layer="20"/>
+<wire x1="-31.74" y1="-3.31" x2="-31.7427" y2="4.863" width="0" layer="20"/>
+</package>
+<package name="4POWER_8SIGNAL_MOUNT">
+<pad name="A1_1" x="-24.13" y="1.27" drill="1.27"/>
+<pad name="A1_4" x="-24.13" y="-2.54" drill="1.27"/>
+<pad name="A1_2" x="-21.59" y="1.27" drill="1.27"/>
+<pad name="A1_5" x="-21.59" y="-2.54" drill="1.27"/>
+<pad name="A1_3" x="-19.05" y="1.27" drill="1.27"/>
+<pad name="A1_6" x="-19.05" y="-2.54" drill="1.27"/>
+<pad name="A2_1" x="-16.51" y="1.27" drill="1.27"/>
+<pad name="A2_4" x="-16.51" y="-2.54" drill="1.27"/>
+<pad name="A2_2" x="-13.97" y="1.27" drill="1.27"/>
+<pad name="A2_5" x="-13.97" y="-2.54" drill="1.27"/>
+<pad name="A2_3" x="-11.43" y="1.27" drill="1.27"/>
+<pad name="A2_6" x="-11.43" y="-2.54" drill="1.27"/>
+<pad name="A3_1" x="-8.89" y="1.27" drill="1.27"/>
+<pad name="A3_4" x="-8.89" y="-2.54" drill="1.27"/>
+<pad name="A3_2" x="-6.35" y="1.27" drill="1.27"/>
+<pad name="A3_5" x="-6.35" y="-2.54" drill="1.27"/>
+<pad name="A3_3" x="-3.81" y="1.27" drill="1.27"/>
+<pad name="A3_6" x="-3.81" y="-2.54" drill="1.27"/>
+<pad name="A4_1" x="-1.27" y="1.27" drill="1.27"/>
+<pad name="A4_4" x="-1.27" y="-2.54" drill="1.27"/>
+<pad name="A4_2" x="1.27" y="1.27" drill="1.27"/>
+<pad name="A4_5" x="1.27" y="-2.54" drill="1.27"/>
+<pad name="A4_3" x="3.81" y="1.27" drill="1.27"/>
+<pad name="A4_6" x="3.81" y="-2.54" drill="1.27"/>
+<pad name="B1_1" x="6.35" y="1.27" drill="1.27"/>
+<pad name="B1_2" x="6.35" y="-2.54" drill="1.27"/>
+<pad name="B2_1" x="8.89" y="1.27" drill="1.27"/>
+<pad name="B2_2" x="8.89" y="-2.54" drill="1.27"/>
+<pad name="B3_1" x="11.43" y="1.27" drill="1.27"/>
+<pad name="B3_2" x="11.43" y="-2.54" drill="1.27"/>
+<pad name="B4_1" x="13.97" y="1.27" drill="1.27"/>
+<pad name="B4_2" x="13.97" y="-2.54" drill="1.27"/>
+<pad name="B5_1" x="16.51" y="1.27" drill="1.27"/>
+<pad name="B5_2" x="16.51" y="-2.54" drill="1.27"/>
+<pad name="B6_1" x="19.05" y="1.27" drill="1.27"/>
+<pad name="B6_2" x="19.05" y="-2.54" drill="1.27"/>
+<pad name="B7_1" x="21.59" y="1.27" drill="1.27"/>
+<pad name="B7_2" x="21.59" y="-2.54" drill="1.27"/>
+<pad name="B8_1" x="24.13" y="1.27" drill="1.27"/>
+<pad name="B8_2" x="24.13" y="-2.54" drill="1.27"/>
+<wire x1="-25.4" y1="2.54" x2="-25.4" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="-3.81" x2="25.4" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-3.81" x2="25.4" y2="2.54" width="0.127" layer="21"/>
+<wire x1="25.4" y1="2.54" x2="-25.4" y2="2.54" width="0.127" layer="21"/>
+<rectangle x1="-24.765" y1="-3.175" x2="-18.415" y2="1.905" layer="1"/>
+<rectangle x1="-17.145" y1="-3.175" x2="-10.795" y2="1.905" layer="1"/>
+<rectangle x1="-9.525" y1="-3.175" x2="-3.175" y2="1.905" layer="1"/>
+<rectangle x1="-1.905" y1="-3.175" x2="4.445" y2="1.905" layer="1"/>
+<rectangle x1="5.715" y1="-3.175" x2="6.985" y2="1.905" layer="1"/>
+<rectangle x1="8.255" y1="-3.175" x2="9.525" y2="1.905" layer="1"/>
+<rectangle x1="10.795" y1="-3.175" x2="12.065" y2="1.905" layer="1"/>
+<rectangle x1="13.335" y1="-3.175" x2="14.605" y2="1.905" layer="1"/>
+<rectangle x1="15.875" y1="-3.175" x2="17.145" y2="1.905" layer="1"/>
+<rectangle x1="18.415" y1="-3.175" x2="19.685" y2="1.905" layer="1"/>
+<rectangle x1="20.955" y1="-3.175" x2="22.225" y2="1.905" layer="1"/>
+<rectangle x1="23.495" y1="-3.175" x2="24.765" y2="1.905" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IRLZ44">
@@ -1863,6 +1960,26 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="0" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="4POWER_8SIGNAL">
+<wire x1="-2.54" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="-2.54" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
+<pin name="A1" x="10.16" y="15.24" length="middle" rot="R180"/>
+<pin name="A2" x="10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="A3" x="10.16" y="10.16" length="middle" rot="R180"/>
+<pin name="A4" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="B1" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="B2" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="B3" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="B4" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="B5" x="10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="B6" x="10.16" y="-10.16" length="middle" rot="R180"/>
+<pin name="B7" x="10.16" y="-12.7" length="middle" rot="R180"/>
+<pin name="B8" x="10.16" y="-15.24" length="middle" rot="R180"/>
+<text x="-2.54" y="-20.32" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="20.32" size="1.778" layer="95">4P X 8S P/N: 2007088-3</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3042,6 +3159,51 @@ COM-09264 (Diffuse)</description>
 <connect gate="G$1" pin="LAT" pad="LAT"/>
 <connect gate="G$1" pin="SIN" pad="SIN"/>
 <connect gate="G$1" pin="SOUT" pad="SOUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4POWER_8SIGNAL">
+<gates>
+<gate name="G$1" symbol="4POWER_8SIGNAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MATING_BOARD" package="4POWER_8SIGNAL">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1_B A1_T"/>
+<connect gate="G$1" pin="A2" pad="A2_B A2_T"/>
+<connect gate="G$1" pin="A3" pad="A3_B A3_T"/>
+<connect gate="G$1" pin="A4" pad="A4_B A4_T"/>
+<connect gate="G$1" pin="B1" pad="B1_B B1_T"/>
+<connect gate="G$1" pin="B2" pad="B2_B B2_T"/>
+<connect gate="G$1" pin="B3" pad="B3_B B3_T"/>
+<connect gate="G$1" pin="B4" pad="B4_B B4_T"/>
+<connect gate="G$1" pin="B5" pad="B5_B B5_T"/>
+<connect gate="G$1" pin="B6" pad="B6_B B6_T"/>
+<connect gate="G$1" pin="B7" pad="B7_B B7_T"/>
+<connect gate="G$1" pin="B8" pad="B8_B B8_T"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MOUNTING_BOARD" package="4POWER_8SIGNAL_MOUNT">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1_1 A1_2 A1_3 A1_4 A1_5 A1_6"/>
+<connect gate="G$1" pin="A2" pad="A2_1 A2_2 A2_3 A2_4 A2_5 A2_6"/>
+<connect gate="G$1" pin="A3" pad="A3_1 A3_2 A3_3 A3_4 A3_5 A3_6"/>
+<connect gate="G$1" pin="A4" pad="A4_1 A4_2 A4_3 A4_4 A4_5 A4_6"/>
+<connect gate="G$1" pin="B1" pad="B1_1 B1_2"/>
+<connect gate="G$1" pin="B2" pad="B2_1 B2_2"/>
+<connect gate="G$1" pin="B3" pad="B3_1 B3_2"/>
+<connect gate="G$1" pin="B4" pad="B4_1 B4_2"/>
+<connect gate="G$1" pin="B5" pad="B5_1 B5_2"/>
+<connect gate="G$1" pin="B6" pad="B6_1 B6_2"/>
+<connect gate="G$1" pin="B7" pad="B7_1 B7_2"/>
+<connect gate="G$1" pin="B8" pad="B8_1 B8_2"/>
 </connects>
 <technologies>
 <technology name=""/>
