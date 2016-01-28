@@ -22,7 +22,7 @@ fIdx = @(x,xVal) find(x==min(abs(x-xVal)));
 
 fid=fopen('eagleDomeBasePositioner.scr','w');
 libName ='WallerLabLib';
-ledPartName = '4POWER_8SIGNAL';
+ledPartName = '4POWER_8SIGNALMOUNTING_BOARD';
 
 radius = 68; %mm 
 ledCount = 2500;
