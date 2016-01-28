@@ -37,7 +37,7 @@ figure; scatter(xyPositions(:,1),xyPositions(:,2)); axis equal
 
 fprintf(fid,'USE %s\n',libName);
 dy = 1; dxc = 2; dxs = 3; rowCt = 8;
-for bIdx = 1:size(angularPositions,1)
+for bIdx = 1:length(angularPositions)
    col = ceil(bIdx/rowCt);
    row = 9-(bIdx - (col-1).*rowCt);
    x = floor((col-1)/2)*dxc+floor((col)/2)*dxs;
@@ -53,7 +53,7 @@ for bIdx = 1:size(angularPositions,1)
 end
 fprintf(fid,'BOARD;\n');
 fprintf(fid,'GRID MM 0.05 1\n');
-for bIdx=1:size(angularPositions,1)
+for bIdx=1:length(angularPositions)
     fprintf(fid,'MOVE SOCKET%02d (%.02f %.02f)\n',...
     bIdx-1,xyPositions(bIdx,1),xyPositions(bIdx,2));
     fprintf(fid,'ROTATE R%.1f SOCKET%02d\n',angularPositions(bIdx),bIdx-1);
