@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1147,14 +1147,16 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <smd name="A4_B" x="-4.572" y="-0.381" dx="6.35" dy="5.842" layer="16"/>
 <wire x1="-1.016" y1="-3.302" x2="-1.016" y2="3.81" width="0" layer="20"/>
 <wire x1="-1.016" y1="3.81" x2="1.016" y2="3.81" width="0" layer="20" curve="-180"/>
-<wire x1="-31.75" y1="-3.302" x2="-1.016" y2="-3.302" width="0" layer="21"/>
-<wire x1="1.016" y1="-3.302" x2="21.336" y2="-3.302" width="0" layer="21"/>
+<wire x1="-31.7" y1="-3.3" x2="-1.016" y2="-3.302" width="0" layer="21"/>
+<wire x1="1.016" y1="-3.302" x2="21.3" y2="-3.3" width="0" layer="21"/>
 <wire x1="-1.524" y1="-3.81" x2="-1.016" y2="-3.302" width="0" layer="20"/>
-<wire x1="-31.242" y1="-3.81" x2="-31.75" y2="-3.302" width="0" layer="20"/>
+<wire x1="-31.242" y1="-3.81" x2="-31.7" y2="-3.3" width="0" layer="20"/>
 <wire x1="1.524" y1="-3.81" x2="1.016" y2="-3.302" width="0" layer="20"/>
-<wire x1="20.828" y1="-3.81" x2="21.336" y2="-3.302" width="0" layer="20"/>
-<wire x1="21.34" y1="-3.3" x2="21.34" y2="4.8476" width="0" layer="20"/>
-<wire x1="-31.74" y1="-3.31" x2="-31.7427" y2="4.863" width="0" layer="20"/>
+<wire x1="20.828" y1="-3.81" x2="21.3" y2="-3.3" width="0" layer="20"/>
+<wire x1="21.3" y1="-3.3" x2="21.3" y2="4.5" width="0" layer="20"/>
+<wire x1="-31.7" y1="-3.3" x2="-31.7" y2="4.5" width="0" layer="20"/>
+<wire x1="-32" y1="4.5" x2="-31.7" y2="4.5" width="0" layer="20"/>
+<wire x1="21.3" y1="4.5" x2="21.4" y2="4.5" width="0" layer="20"/>
 </package>
 <package name="4POWER_8SIGNAL_MOUNT">
 <pad name="A1_1" x="-24.13" y="1.27" drill="1.27"/>
