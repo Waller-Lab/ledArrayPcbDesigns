@@ -21,7 +21,7 @@ fid=fopen('eagleDomeBasePositioner.scr','w');
 libName ='WallerLabLib';
 ledPartName = '4POWER_8SIGNALMOUNTING_BOARD';
 
-radius = 75; %mm 
+radius = 68; %mm 
 ledCount = 2500;
 ledsPerBoard = 16*6;
 boardCount = ceil(ledCount/(ledsPerBoard));
@@ -35,7 +35,7 @@ dTheta = 360/totalBoardCount;
 angularPositions0 = 0:dTheta:360-dTheta;
 
 n=1:length(angularPositions0);
-positionsToKeep = mod(n,(boardCount/spacerPositionCount)+1)~=1;
+positionsToKeep = mod(n,(boardCount/spacerPositionCount)+1)~=0;
 
 angularPositions = angularPositions0(positionsToKeep);
 xyPositions = [radius.*cosd(angularPositions)' radius.*sind(angularPositions)'];
